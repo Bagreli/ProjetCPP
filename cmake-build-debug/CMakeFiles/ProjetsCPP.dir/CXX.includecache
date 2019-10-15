@@ -6,24 +6,6 @@
 
 #IncludeRegexTransform: 
 
-C:/ProjetsCPP/fonctionsPratiques.cpp
-string
--
-iostream
--
-ctime
--
-cstdlib
--
-vector
--
-fstream
--
-istream
--
-fonctionsPratiques.h
-C:/ProjetsCPP/fonctionsPratiques.h
-
 C:/ProjetsCPP/fonctionsPratiques.h
 
 C:/ProjetsCPP/main.cpp
@@ -43,18 +25,6 @@ fstream
 -
 motMystere.h
 C:/ProjetsCPP/motMystere.h
-fonctionsPratiques.h
-C:/ProjetsCPP/fonctionsPratiques.h
-
-C:/ProjetsCPP/motMystere.cpp
-string
--
-iostream
--
-vector
--
-math.h
--
 fonctionsPratiques.h
 C:/ProjetsCPP/fonctionsPratiques.h
 

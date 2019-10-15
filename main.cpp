@@ -45,19 +45,45 @@ int main() {
     bool rejouer = false;
 
     // choix du type de jeu
-    int choix = choisirPartie();
+    // int choix = choisirPartie();
+    // à des fins de test :
+    int choix = 1;
     if(choix == 1){
         string const fichierDico("C:/ProjetsCPP/dico.txt");
         ifstream monFlux(fichierDico.c_str());
+
         if(monFlux){
             cout << "tout va bien" << endl;
+
+            monFlux.seekg(0, ios::beg);
+            int position = monFlux.tellg();
+            cout << "je suis a la position : " << position << endl;
+
             // compter nombre de lignes possibles
             string mot;
             int iNbMots(0);
+            //iNbMots = compterLignes(monFlux);
             while(getline(monFlux, mot)){
                 iNbMots++;
             }
-            cout << iNbMots << endl;
+            cout << "Il y a " << iNbMots << " mots dans le fichier." << endl;
+            // monFlux.ignore();
+            int choixNumMotRandom = chiffreRandom(iNbMots);
+            cout << "vous devrez trouver le mot numero : " << choixNumMotRandom << endl;
+
+            monFlux.seekg(0, ios::end);
+            position = monFlux.tellg();
+            cout << "je suis a la position : " << position << endl;
+
+            position = monFlux.tellg();
+            cout << "je suis a la position : " << position << endl;
+
+            int i(0);
+            while(i <= choixNumMotRandom){
+                getline(monFlux, mot);
+                i++;
+            }
+            cout << mot << endl;
         }
         else{
             cout << "probleme ouverture fichier dico.txt. "<< endl;

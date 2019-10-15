@@ -90,14 +90,14 @@ bool recommencer(){
     return recommencer;
 }
 
-/*
-int compterLignes(string p_monFlux) {
+
+int compterLignes(ifstream p_monFlux) {
     string mot;
     int iNbMots(0);
-    while(getline(p_monFlux, mot){
+    while(getline(p_monFlux, mot)){
         iNbMots++;
     }
     return iNbMots;
 }
- */
+
 

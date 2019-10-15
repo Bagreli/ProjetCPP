@@ -14,6 +14,6 @@ string verifEspace(string p_mot);
 void sauterLignes(int p_nombreLignes);
 int chiffreRandom(int iScope);
 bool recommencer();
-// int compterLignes(string p_monFlux);
+int compterLignes(ifstream p_monFlux);
 
 #endif //PROJETSCPP_FONCTIONSPRATIQUES_H
