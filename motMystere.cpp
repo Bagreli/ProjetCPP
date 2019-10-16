@@ -24,7 +24,7 @@ int choisirPartie(){
         cout << "Je n'ai pas compris la reponse... 1 pour jouer seul, 2 pour jouer a 2 :";
         cin >> choix;
     }
-    //cin.ignore();
+    cin.ignore();
     return choix;
 }
 
@@ -39,7 +39,6 @@ int iEntrerNombreCoupsMax(){
         cout << "Le chiffre choisi doit etre compris entre 2 et 10. Recommencez :" << endl;
         cin >> nombreCoups;
     }
-    cin.ignore();
     return nombreCoups;
 }
 
@@ -133,7 +132,7 @@ int tenterTrouverMotMystere( string p_motMystere, string p_motFloute, string p_a
 
     int  iTailleMotMystere = iTailleMot(p_motMystere);
     string sTailleMotMystere = to_string(iTailleMotMystere);
-    cout << "Merci joueur 1. Joueur 2, a vous de jouer." << endl;
+
     string messageAide = "Petite aide : le mot mystere contient " + sTailleMotMystere + " lettres, commence et finit ainsi : " + p_motFloute + ", et son anagramme est : " + p_anagramme + ".";
     cout << messageAide << endl;
     cout << "Pour vous quel est le mot mystere? " << endl;

@@ -25,8 +25,9 @@ int main() {
     // à des fins de test :
     // int choix = 1;
     if(choix == 1){
-        string const fichierDico("C:/ProjetsCPP/dico.txt");
-        ifstream monFlux(fichierDico.c_str());
+        // /!\ si besoin mettre le chemin principal. pas possible avec Clion sur windows de mettre chemin relatif
+        ifstream monFlux("C:/ProjetsCPP/dico.txt");
+        //ifstream monFlux("dico.txt"); // ne fonctionne pas...
 
         if(monFlux){
             do{
@@ -40,7 +41,7 @@ int main() {
 
                 cout << "Veuillez entrer le NOMBRE DE COUPS MAXIMUM (entre 2 et 10) que vous vous donnez pour trouver le mot mystere :" << endl;
                 int nombreCoups = iEntrerNombreCoupsMax();
-
+                cin.ignore();
                 string motFloute = sFlouterMot(motMystere);
                 string anagramme = creerAnagramme(motMystere, /*debug*/ 0);
 
@@ -88,6 +89,7 @@ int main() {
             // l'utilisateur 2 doit trouver le mot en 5 coups
             sauterLignes(15); // on saute des lignes pour que l'utilis
             int coupsTemp(0);
+            cout << "Merci joueur 1. Joueur 2, a vous de jouer." << endl;
             coupsTemp = tenterTrouverMotMystere(motMystere, motFloute, anagramme, nombreCoups, debug);
 
             if(coupsTemp == nombreCoups + 1){
