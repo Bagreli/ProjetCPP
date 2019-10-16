@@ -13,15 +13,12 @@
   <component name="ChangeListManager">
     <list default="true" id="75d24433-3bad-4424-881f-a240d89a6179" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetsCPP.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetsCPP.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetsCPP.dir/fonctionsPratiques.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetsCPP.dir/fonctionsPratiques.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetsCPP.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetsCPP.dir/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetsCPP.dir/main.cpp.obj" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetsCPP.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetsCPP.dir/objects.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetsCPP.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/ProjetsCPP.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fonctionsPratiques.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/fonctionsPratiques.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonctionsPratiques.h" beforeDir="false" afterPath="$PROJECT_DIR$/fonctionsPratiques.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -93,8 +90,17 @@
       <workItem from="1571078182820" duration="2707000" />
       <workItem from="1571160660663" duration="1820000" />
       <workItem from="1571162568516" duration="1236000" />
-      <workItem from="1571165103042" duration="7035000" />
+      <workItem from="1571165103042" duration="7328000" />
+      <workItem from="1571205029339" duration="1881000" />
     </task>
+    <task id="LOCAL-00001" summary="pour sauvegarde">
+      <created>1571174295972</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1571174295972</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,5 +118,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="pour sauvegarde" />
+    <option name="LAST_COMMIT_MESSAGE" value="pour sauvegarde" />
   </component>
 </project>

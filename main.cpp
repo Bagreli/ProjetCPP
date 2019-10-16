@@ -62,29 +62,32 @@ int main() {
             // compter nombre de lignes possibles
             string mot;
             int iNbMots(0);
-            cout << "bonjour come" << endl;
-            //iNbMots = compterLignes(monFlux);
+
+            iNbMots = compterLignes(monFlux);
+            /*
             while(getline(monFlux, mot)){
                 iNbMots++;
-            }
+            } */
             cout << "Il y a " << iNbMots << " mots dans le fichier." << endl;
-            // monFlux.ignore();
+
             int choixNumMotRandom = chiffreRandom(iNbMots);
             cout << "vous devrez trouver le mot numero : " << choixNumMotRandom << endl;
 
-            monFlux.seekg(0, ios::end);
+            monFlux.clear();
+            monFlux.seekg(0, ios::beg);
             position = monFlux.tellg();
             cout << "je suis a la position : " << position << endl;
-
-            position = monFlux.tellg();
-            cout << "je suis a la position : " << position << endl;
+            cout << "blou" << endl;
 
             int i(0);
+            cout << "i : " << i << " mot random : "  << choixNumMotRandom << endl;
+
             while(i <= choixNumMotRandom){
                 getline(monFlux, mot);
                 i++;
             }
-            cout << mot << endl;
+
+            cout << "mot : " << mot << endl;
         }
         else{
             cout << "probleme ouverture fichier dico.txt. "<< endl;

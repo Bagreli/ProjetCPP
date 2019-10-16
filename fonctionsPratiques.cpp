@@ -4,11 +4,11 @@
 
 #include <string>
 #include <iostream>
+#include <istream>
 #include <ctime>
 #include <cstdlib>
 #include <vector>
 #include <fstream>
-#include <istream>
 #include "fonctionsPratiques.h"
 
 using namespace std;
@@ -91,12 +91,15 @@ bool recommencer(){
 }
 
 
-int compterLignes(ifstream p_monFlux) {
+int compterLignes(ifstream &p_monFlux) {
     string mot;
     int iNbMots(0);
+    p_monFlux.clear();
+    p_monFlux.seekg(0, ios::beg);
     while(getline(p_monFlux, mot)){
         iNbMots++;
     }
+
     return iNbMots;
 }
 
