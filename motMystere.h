@@ -15,6 +15,9 @@ int tenterTrouverMotMystere(string p_motMystere, string p_motFloute, string p_an
 string creerAnagramme(string p_motMystere, int debug = 0);
 float calculerStatistiques(float p_partiesJouees, float p_partieGagnees, float p_coupsPerdants);
 int choisirPartie();
+string getMotRandom(ifstream &p_monFlux, int p_iScope);
+
+
 
 
 #endif //PROJETSCPP_MOTMYSTERE_H

@@ -4,7 +4,9 @@
 
 #include <string>
 #include <iostream>
-#include <vector>
+#include <istream>
+#include <cstdlib>
+#include <fstream>
 #include <math.h>
 #include "fonctionsPratiques.h"
 
@@ -14,27 +16,30 @@ using namespace std;
 int choisirPartie(){
     int choix(0);
     cout << "Bienvenue au jeu du mot mystere." << endl;
-    cout << "Pour seul contre l'ordi, faites le 1, sinon faites le 2 pour jouer a 2" << endl;
+    cout << "Pour seul contre l'ordi, faites le 1." << endl;
+    cout << "Pour jouer a 2, faites le 2." << endl;
+    cout << "Quel est votre choix? (1 ou 2) :" << endl;
     cin >> choix;
     while(choix != 1 && choix != 2){
         cout << "Je n'ai pas compris la reponse... 1 pour jouer seul, 2 pour jouer a 2 :";
         cin >> choix;
     }
+    //cin.ignore();
     return choix;
 }
 
+
+
 int iEntrerNombreCoupsMax(){
-    string message = "Joueur 1, veuillez le nombre de coups maximums (entre 2 et 10) que le joueur 2 aura pour trouver le mot.";
-    cout << message << endl;
+
     int nombreCoups(0);
     cin >> nombreCoups;
-
 
     while (nombreCoups < 2 || nombreCoups > 10){
         cout << "Le chiffre choisi doit etre compris entre 2 et 10. Recommencez :" << endl;
         cin >> nombreCoups;
     }
-
+    cin.ignore();
     return nombreCoups;
 }
 
@@ -212,5 +217,16 @@ float calculerStatistiques(float p_partiesJouees,  float p_partieGagnees, float 
     return fReussite;
 }
 
-
+string getMotRandom(ifstream &p_monFlux, int p_iScope){
+    int iNbRandom = chiffreRandom(p_iScope);
+    int i(0);
+    string motRandom;
+    while(i <= iNbRandom){
+        getline(p_monFlux, motRandom);
+        i++;
+    }
+    p_monFlux.clear();
+    p_monFlux.seekg(0, ios::beg);
+    return motRandom;
+}
 

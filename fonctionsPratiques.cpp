@@ -5,11 +5,8 @@
 #include <string>
 #include <iostream>
 #include <istream>
-#include <ctime>
 #include <cstdlib>
-#include <vector>
 #include <fstream>
-#include "fonctionsPratiques.h"
 
 using namespace std;
 
@@ -99,8 +96,11 @@ int compterLignes(ifstream &p_monFlux) {
     while(getline(p_monFlux, mot)){
         iNbMots++;
     }
-
+    p_monFlux.clear();
+    p_monFlux.seekg(0, ios::beg);
     return iNbMots;
 }
+
+
 
 

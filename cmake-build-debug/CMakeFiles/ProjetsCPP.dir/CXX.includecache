@@ -8,25 +8,19 @@
 
 C:/ProjetsCPP/fonctionsPratiques.h
 
-C:/ProjetsCPP/main.cpp
+C:/ProjetsCPP/motMystere.cpp
+string
+-
 iostream
 -
 istream
 -
-string
--
-ctime
--
 cstdlib
--
-vector
 -
 fstream
 -
-motMystere.h
-C:/ProjetsCPP/motMystere.h
+math.h
+-
 fonctionsPratiques.h
 C:/ProjetsCPP/fonctionsPratiques.h
-
-C:/ProjetsCPP/motMystere.h
 

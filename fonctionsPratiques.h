@@ -14,6 +14,7 @@ string verifEspace(string p_mot);
 void sauterLignes(int p_nombreLignes);
 int chiffreRandom(int iScope);
 bool recommencer();
-int compterLignes(ifstream &p_monFlux);
+int compterLignes(ifstream &p_monFlux); // compte les lignes présentes dans un fichier
+
 
 #endif //PROJETSCPP_FONCTIONSPRATIQUES_H
