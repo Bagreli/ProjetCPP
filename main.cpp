@@ -15,19 +15,17 @@ int main() {
     srand(time(0));
     // fin intégrations obligatoires
 
-    // variables de statistiques
-    int debug = 1; // si mode debug : 1 : le mot mystère est révélé
-    int coupsPerdants(0), partiesJouees(0), partiesGagnees(0);
+    //#################### VARIABLES DE FONCTIONNEMENT #####################
+    int debug = 0; // si mode debug : 1 : le mot mystère est révélé
+    int coupsPerdants(0), partiesJouees(0), partiesGagnees(0); // variables de statistiques
     bool rejouer = false;
 
-    // choix du type de jeu
+    // choix du type de jeu. 1 pour partie contre l'ordi, 2 pour partie à deux joueurs
     int choix = choisirPartie();
-    // à des fins de test :
-    // int choix = 1;
+
     if(choix == 1){
-        // /!\ si besoin mettre le chemin principal. pas possible avec Clion sur windows de mettre chemin relatif
-        ifstream monFlux("C:/ProjetsCPP/dico.txt");
-        //ifstream monFlux("dico.txt"); // ne fonctionne pas...
+
+        ifstream monFlux("C:/ProjetsCPP/dico.txt"); //ifstream monFlux("dico.txt"); // ne fonctionne pas... /!\ si besoin mettre le chemin principal. pas possible avec Clion sur windows de mettre chemin relatif
 
         if(monFlux){
             do{
