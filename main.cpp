@@ -62,6 +62,7 @@ int main() {
             // compter nombre de lignes possibles
             string mot;
             int iNbMots(0);
+            cout << "bonjour come" << endl;
             //iNbMots = compterLignes(monFlux);
             while(getline(monFlux, mot)){
                 iNbMots++;
